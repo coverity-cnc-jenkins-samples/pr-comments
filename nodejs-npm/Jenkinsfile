@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     dir('nodejs-npm') {
-                        security_scan coverity_prComment_enabled: true, coverity_prComment_impacts: 'HIGH,MEDIUM,', coverity_waitForScan: true, product: 'coverity'
+                        security_scan coverity_prComment_enabled: true, coverity_waitForScan: true, product: 'coverity'
 
                         
                     }
