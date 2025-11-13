@@ -2,10 +2,10 @@
 
 ## Build Information
 - **Job Name:** `MBP_Github_Coverity_Pr_Comments/main`
-- **Build Number:** #2
+- **Build Number:** #3
 - **Build Status:** 🟢 **SUCCESS**
-- **Duration:** 3 min 55 sec and counting
-- **Timestamp:** 2025-11-13 21:34:47 UTC
+- **Duration:** 3 min 58 sec and counting
+- **Timestamp:** 2025-11-13 21:52:41 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 ```
 Branch indexing
 Connecting to https://api.github.com using madhusud@blackduck.com/****** (Github_Username_PAT)
-Obtained nodejs-npm/Jenkinsfile from 6b705c131bf63aec94e9f7b630719d81d9a2848e
+Obtained nodejs-npm/Jenkinsfile from 7f85efbe18f60217a7be64eb7963519b2b220bcf
 Loading library blackduck-logs-publisher@main
 Attempting to resolve main from remote references...
  > git --version # timeout=10
@@ -40,30 +40,27 @@ Commit message: "Phase 3 - 2"
  > git rev-list --no-walk e969196a63b1be83b84541b022f7aa52928bd5e5 # timeout=10
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2
+Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Declarative: Checkout SCM)
 [Pipeline] checkout
 The recommended git tool is: NONE
 using credential Github_Username_PAT
-Cloning the remote Git repository
-Cloning with configured refspecs honoured and without tags
-Cloning repository https://github.com/coverity-cnc-jenkins-samples/pr-comments.git
- > git init /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2 # timeout=10
+Fetching changes from the remote Git repository
+Fetching without tags
+ > git rev-parse --resolve-git-dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/.git # timeout=10
+ > git config remote.origin.url https://github.com/coverity-cnc-jenkins-samples/pr-comments.git # timeout=10
 Fetching upstream changes from https://github.com/coverity-cnc-jenkins-samples/pr-comments.git
  > git --version # timeout=10
  > git --version # 'git version 2.39.5 (Apple Git-154)'
 using GIT_ASKPASS to set credentials Github_Username_PAT
  > git fetch --no-tags --force --progress -- https://github.com/coverity-cnc-jenkins-samples/pr-comments.git +refs/heads/main:refs/remotes/origin/main # timeout=10
-Avoid second fetch
-Checking out Revision 6b705c131bf63aec94e9f7b630719d81d9a2848e (main)
-Commit message: "Coverity PR Comments"
-First time build. Skipping changelog.
- > git config remote.origin.url https://github.com/coverity-cnc-jenkins-samples/pr-comments.git # timeout=10
- > git config --add remote.origin.fetch +refs/heads/main:refs/remotes/origin/main # timeout=10
+Checking out Revision 7f85efbe18f60217a7be64eb7963519b2b220bcf (main)
+Commit message: "Jenkins log upload - Build #2"
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 6b705c131bf63aec94e9f7b630719d81d9a2848e # timeout=10
+ > git checkout -f 7f85efbe18f60217a7be64eb7963519b2b220bcf # timeout=10
+ > git rev-list --no-walk 6b705c131bf63aec94e9f7b630719d81d9a2848e # timeout=10
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] withEnv
@@ -75,7 +72,7 @@ First time build. Skipping changelog.
 [Pipeline] echo
 JOB_NAME: MBP_Github_Coverity_Pr_Comments/main
 [Pipeline] dir
-Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm
 [Pipeline] {
 [Pipeline] sh
 + node --version
@@ -86,59 +83,13 @@ v22.16.0
 [Pipeline] sh
 + npm install
 npm warn deprecated fsevents@1.2.9: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
-npm warn deprecated set-value@2.0.0: Critical bug fixed in v3.0.1, please upgrade to the latest version.
-npm warn deprecated mixin-deep@1.3.1: Critical bug fixed in v2.0.1, please upgrade to the latest version.
-npm warn deprecated ini@1.3.5: Please update to ini >=1.3.6 to avoid a prototype pollution issue
-npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
-npm warn deprecated path-is-absolute@2.0.0: This package is no longer relevant as Node.js 0.12 is unmaintained.
-npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
-npm warn deprecated har-validator@5.1.3: this library is no longer supported
-npm warn deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.
-npm warn deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
-npm warn deprecated bcrypt-nodejs@0.0.3: bcrypt-nodejs is no longer actively maintained. Please use bcrypt or bcryptjs. See https://github.com/kelektiv/node.bcrypt.js/wiki/bcrypt-vs-brypt.js to learn more about these two options
-npm warn deprecated cryptiles@0.2.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated source-map-url@0.4.0: See https://github.com/lydell/source-map-url#deprecated
-npm warn deprecated boom@0.4.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated chokidar@2.1.6: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm warn deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated sntp@0.2.4: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
-npm warn deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm warn deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
-npm warn deprecated request@2.36.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated mkdirp@0.3.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-npm warn deprecated tough-cookie@2.2.2: ReDoS vulnerability parsing Set-Cookie https://nodesecurity.io/advisories/130
-npm warn deprecated hoek@0.9.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated node-uuid@1.4.8: Use uuid module instead
-npm warn deprecated node-uuid@1.4.8: Use uuid module instead
-npm warn deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm warn deprecated source-map-resolve@0.5.2: See https://github.com/lydell/source-map-resolve#deprecated
-npm warn deprecated har-validator@2.0.6: this library is no longer supported
-npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-npm warn deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated request@2.79.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated request@2.67.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated readdir-scoped-modules@1.0.2: This functionality has been moved to @npmcli/fs
-npm warn deprecated hawk@1.0.0: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
-npm warn deprecated swig@1.4.2: This package is no longer maintained
-npm warn deprecated bson@1.0.9: Fixed a critical issue with BSON serialization documented in CVE-2019-2391, see https://bit.ly/2KcpXdo for more details
-npm warn deprecated nodeunit@0.9.5: you are strongly encouraged to use other testing options
 
-added 962 packages, and audited 1412 packages in 16s
+up to date, audited 1412 packages in 21s
 
 32 packages are looking for funding
   run `npm fund` for details
 
-137 vulnerabilities (9 low, 35 moderate, 57 high, 36 critical)
+136 vulnerabilities (9 low, 35 moderate, 57 high, 35 critical)
 
 To address issues that do not require attention, run:
   npm audit fix
@@ -161,7 +112,7 @@ Run `npm audit` for details.
 [Pipeline] script
 [Pipeline] {
 [Pipeline] dir
-Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm
 [Pipeline] {
 [Pipeline] security_scan
 **************************** START EXECUTION OF BLACK DUCK SECURITY SCAN ****************************
@@ -191,131 +142,113 @@ Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Co
 [Security Scan] INFO: Coverity Stream Name: pr-comments-main
 [Security Scan] INFO: Coverity PR Comment is ignored for non pull request scan
 [Security Scan] INFO: Jenkins Job name: MBP_Github_Coverity_Pr_Comments
-[Security Scan] INFO: Executable command line arguments: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm/bridge-cli --stage connect --input /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/coverity_input7662534246045461916.json --out .bridge/output/scan_info_out.json
+[Security Scan] INFO: Executable command line arguments: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm/bridge-cli --stage connect --input /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/coverity_input9049824890493443057.json --out .bridge/output/scan_info_out.json
 
 ******************************* START EXECUTION OF BRIDGE CLI *******************************
-2025-11-13 21:31:23.9975 IST [Bridge CLI] INFO: Using cache directory: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
-2025-11-13 21:31:24.0049 IST [Bridge CLI] INFO: Found version "3.0.128" in registry for workflow "connect", trying to load it from local cache
-2025-11-13 21:31:24.0676 IST [Bridge CLI] INFO: Input Resources:
-2025-11-13 21:31:24.0677 IST [Bridge CLI] INFO: resource = value [source]
-2025-11-13 21:31:24.0677 IST [Bridge CLI] INFO: ------------------------------------------------------------
-2025-11-13 21:31:24.0677 IST [Bridge CLI] INFO: coverity.connect.project.name = pr-comments [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0677 IST [Bridge CLI] INFO: coverity.connect.stream.name = pr-comments-main [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0678 IST [Bridge CLI] INFO: coverity.connect.url = https://integrations-qa.dev.cnc.duckutil.net [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0678 IST [Bridge CLI] INFO: coverity.connect.user.name = admin [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0678 IST [Bridge CLI] INFO: coverity.connect.user.password = ***************************************** [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0678 IST [Bridge CLI] INFO: coverity.waitForScan = true [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0679 IST [Bridge CLI] INFO: network.airgap = false [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0679 IST [Bridge CLI] INFO: network.ssl.trustAll = false [coverity_input7662534246045461916.json]
-2025-11-13 21:31:24.0679 IST [Bridge CLI] INFO: ------------------------------------------------------------
-2025-11-13 21:31:24.0679 IST [Bridge CLI] INFO: Starting adapters for stage connect
-2025-11-13 21:31:24.0681 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Controller
-2025-11-13 21:31:24.0714 IST [Bridge CLI] INFO: Starting Adapter: Check pull request
-2025-11-13 21:31:24.0854 IST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
-2025-11-13 21:31:24.0856 IST [Check pull request] INFO: Adapter finished
-2025-11-13 21:31:26.4122 IST [Coverity Connect Controller] INFO: No coverity version is configured, will use the default or latest supported version from the server
-2025-11-13 21:31:26.4352 IST [Coverity Connect Controller] INFO: Provided value for resource 'coverity.execution.path'
-2025-11-13 21:31:26.4352 IST [Bridge CLI] INFO: Starting adapters for stage connect-post-processing
-2025-11-13 21:31:26.4352 IST [Bridge CLI] INFO: Starting adapters for stage scm
-2025-11-13 21:31:26.4353 IST [Bridge CLI] INFO: Starting adapters for stage connect-scan
-2025-11-13 21:31:26.4357 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Scan
-2025-11-13 21:31:26.4357 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Post Scan
-2025-11-13 21:31:26.4357 IST [Bridge CLI] INFO: Starting Adapter: SCM Checker
-2025-11-13 21:31:26.4359 IST [Coverity Connect Controller] INFO: Adapter finished
-2025-11-13 21:31:26.4402 IST [Bridge CLI] INFO: Starting Adapter: Default Adapter for Set Version for Coverity
-2025-11-13 21:31:26.4404 IST [Default Adapter for Set Version for Coverity] INFO: Provided value for resource 'coverity.version'
-2025-11-13 21:31:26.4405 IST [Default Adapter for Set Version for Coverity] INFO: Adapter finished
-2025-11-13 21:31:26.4969 IST [Coverity Connect Scan] INFO: Identified workflow: Coverity
-2025-11-13 21:31:26.4970 IST [Coverity Connect Scan] INFO: command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity scan --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir -o analyze.location=connect -o commit.connect.url=https://integrations-qa.dev.cnc.duckutil.net -o commit.connect.stream=pr-comments-main -o commit.connect.project=pr-comments
-2025-11-13 21:31:26.5566 IST [Coverity Connect Scan] INFO: coverity 2025.9.0 covcli-2025.9-push-12
-2025-11-13 21:31:26.5572 IST [Coverity Connect Scan] WARNING: No setting for 'commit.connect.on-new-cert' specified.
-2025-11-13 21:31:26.5572 IST [Coverity Connect Scan] WARNING: Using default value of 'distrust'.
-2025-11-13 21:31:26.5572 IST [Coverity Connect Scan] WARNING: This may result in a certificate validation error when uploading defects to Coverity Connect.
-2025-11-13 21:31:26.5573 IST [Coverity Connect Scan] WARNING: If you trust the Coverity Connect instance and certificate validation fails, set 'commit.connect.on-new-cert' to 'trust'.
-2025-11-13 21:31:26.5573 IST [Coverity Connect Scan] WARNING: If you are unfamiliar with what this means, please talk to your Coverity Connect administrator.
-2025-11-13 21:31:26.5599 IST [Coverity Connect Scan] INFO: Detected that stdout is not connected to a terminal.  Defaulting ticker mode to 'none'.
-2025-11-13 21:31:26.5600 IST [Coverity Connect Scan] INFO: If this is not correct, explicitly set the ticker mode to the desired value using the '--ticker-mode' option.
-2025-11-13 21:31:26.5605 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir create
-2025-11-13 21:31:28.3980 IST [Coverity Connect Scan] INFO: Cloud analysis is enabled.
-2025-11-13 21:31:31.6931 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-manage-cache check
-2025-11-13 21:31:32.5173 IST [Coverity Connect Scan] INFO: Caching is enabled.
-2025-11-13 21:31:33.9099 IST [Coverity Connect Scan] INFO: Telemetry is enabled
-2025-11-13 21:31:34.4672 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
-2025-11-13 21:31:34.5049 IST [Coverity Connect Scan] INFO: Executing action no-op: nothing to do for initialization
-2025-11-13 21:31:35.0260 IST [Coverity Connect Scan] INFO: Executing action Delete compiler configurations for intermediate directory '/Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir'
-2025-11-13 21:31:35.0262 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler gcc --comptype clangcc --template
-2025-11-13 21:31:35.2696 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler cc --comptype gcc --template
-2025-11-13 21:31:35.5063 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler c++ --comptype g++ --template
-2025-11-13 21:31:35.7681 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler clang --comptype clangcc --template
-2025-11-13 21:31:36.0091 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler java --comptype java --template
-2025-11-13 21:31:36.2618 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler go --comptype go --template
-2025-11-13 21:31:36.5062 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler ccache --comptype prefix --template
-2025-11-13 21:31:36.7458 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler kotlinc --comptype kotlinc --template
-2025-11-13 21:31:36.9989 IST [Coverity Connect Scan] WARNING: Template config template-java-config-0 already exists for java and will be reused. 
-2025-11-13 21:31:36.9989 IST [Coverity Connect Scan] WARNING: Template config template-apt-config-0 already exists for apt and will be reused. 
-2025-11-13 21:31:36.9989 IST [Coverity Connect Scan] WARNING: Template config template-javaw-config-0 already exists for javaw and will be reused. 
-2025-11-13 21:31:37.0053 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --dart
-2025-11-13 21:31:37.2525 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --javascript
-2025-11-13 21:31:37.5091 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --php
-2025-11-13 21:31:37.7565 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --python
-2025-11-13 21:31:38.0063 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ruby
-2025-11-13 21:31:38.2536 IST [Coverity Connect Scan] INFO: Executing action Configure build compiler: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-configure -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --comptype capture-config-files --file-regex $capture-config-files$ --template
-2025-11-13 21:31:38.2659 IST [Coverity Connect Scan] WARNING: Configuration already exists for file regex $capture-config-files$
-2025-11-13 21:31:38.2660 IST [Coverity Connect Scan] INFO:           and it will not be updated.
-2025-11-13 21:31:38.7902 IST [Coverity Connect Scan] INFO: Executing action no-op: no compilers need to be unconfigured
-2025-11-13 21:31:39.2841 IST [Coverity Connect Scan] INFO: Executing action no-op: compiler configurations loaded
-2025-11-13 21:31:39.9017 IST [Coverity Connect Scan] INFO: Executing action Emit files using buildless capture: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-capture-files --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/capture-file-list-413645935 --record-with-source
-2025-11-13 21:31:39.9150 IST [Coverity Connect Scan] INFO: Buildless capture started.
-2025-11-13 21:31:39.9271 IST [Coverity Connect Scan] INFO: Emitting 84 Files.
-2025-11-13 21:31:40.4467 IST [Coverity Connect Scan] INFO: Buildless capture completed.
-2025-11-13 21:31:40.4531 IST [Coverity Connect Scan] INFO: Executing action No unwanted TUs to delete
-2025-11-13 21:31:40.4531 IST [Coverity Connect Scan] INFO: Executing action Action cleanup: Unwanted TUs action cleanup
-2025-11-13 21:31:40.4532 IST [Coverity Connect Scan] INFO: Executing action deleteResidualTUs /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir
-2025-11-13 21:31:40.4534 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
-2025-11-13 21:31:40.4760 IST [Coverity Connect Scan] INFO: Executing action Invalidate capture results
-2025-11-13 21:31:41.0378 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
-2025-11-13 21:31:41.0965 IST [Coverity Connect Scan] INFO: Capture summary:
-2025-11-13 21:31:41.0965 IST [Coverity Connect Scan] INFO:     SUCCEEDED: 84
-2025-11-13 21:31:41.0966 IST [Coverity Connect Scan] INFO:     INCOMPLETE: 0
-2025-11-13 21:31:41.0966 IST [Coverity Connect Scan] INFO:     FAILED: 0
-2025-11-13 21:31:41.0966 IST [Coverity Connect Scan] INFO:     IGNORED: 6
-2025-11-13 21:31:41.0966 IST [Coverity Connect Scan] INFO:     FILES CAPTURED: 84
-2025-11-13 21:31:41.0966 IST [Coverity Connect Scan] INFO:     LINES OF CODE: 32728
-2025-11-13 21:31:41.0985 IST [Coverity Connect Scan] INFO: Capture phase took 7.19s.
-2025-11-13 21:31:41.0986 IST [Coverity Connect Scan] INFO: Loading compiler config '/Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml'
-2025-11-13 21:31:41.1008 IST [Coverity Connect Scan] INFO: Loading compiler config '/Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main@2/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml'
-2025-11-13 21:31:41.1021 IST [Coverity Connect Scan] INFO: Analyzing project in the cloud using Coverity Analysis version 2025.9.0
-2025-11-13 21:31:41.4193 IST [Coverity Connect Scan] INFO: Creating archive containing data to be analyzed...
-2025-11-13 21:31:41.4612 IST [Coverity Connect Scan] INFO: Properties archive created.
-2025-11-13 21:31:41.4613 IST [Coverity Connect Scan] INFO: Uploading data for analysis...
-2025-11-13 21:31:42.2523 IST [Coverity Connect Scan] INFO: |0----------25-----------50----------75---------100|
-2025-11-13 21:31:48.2729 IST [Coverity Connect Scan] INFO: ****************************************************
-2025-11-13 21:31:48.2730 IST [Coverity Connect Scan] INFO: Scan created.
-2025-11-13 21:31:48.2731 IST [Coverity Connect Scan] INFO: The scan ID is '5dfeeea8-26f1-440f-8871-403650b89ff4'
-2025-11-13 21:31:48.2737 IST [Coverity Connect Scan] INFO: Waiting for scan to complete...
-2025-11-13 21:31:48.2738 IST [Coverity Connect Scan] INFO: |0----------25-----------50----------75---------100|
-2025-11-13 21:34:44.5614 IST [Coverity Connect Scan] INFO: ****************************************************
-2025-11-13 21:34:45.2614 IST [Coverity Connect Scan] INFO: Analysis summary after merging defects:
-2025-11-13 21:34:45.2618 IST [Coverity Connect Scan] INFO:     HIGH SEVERITY:    2 issue(s)
-2025-11-13 21:34:45.2619 IST [Coverity Connect Scan] INFO:     MEDIUM SEVERITY: 12 issue(s)
-2025-11-13 21:34:45.2619 IST [Coverity Connect Scan] INFO:     LOW SEVERITY:    25 issue(s)
-2025-11-13 21:34:45.2619 IST [Coverity Connect Scan] INFO:     AUDIT SEVERITY:   0 issue(s)
-2025-11-13 21:34:45.2620 IST [Coverity Connect Scan] INFO: Results are available at https://integrations-qa.dev.cnc.duckutil.net:443/query/defects.htm?stream=pr-comments-main&outstanding=true
-2025-11-13 21:34:45.2655 IST [Coverity Connect Scan] INFO: Analyze phase took 3m4.248s.
-2025-11-13 21:34:45.2687 IST [Coverity Connect Scan] WARNING: !! SOURCES FOR UNSUPPORTED LANGUAGES WERE DETECTED !!
-2025-11-13 21:34:45.2688 IST [Coverity Connect Scan] WARNING: 
-2025-11-13 21:34:45.2688 IST [Coverity Connect Scan] WARNING: Source files for the following languages were detected, but these languages are not supported on Mac OS ARM:
-2025-11-13 21:34:45.2689 IST [Coverity Connect Scan] WARNING:   * C#
-2025-11-13 21:34:45.2689 IST [Coverity Connect Scan] WARNING: In order to analyze these files, please analyze the project on an operating system and architecture where they are supported.
-2025-11-13 21:34:45.2689 IST [Coverity Connect Scan] INFO: Scan complete.
-2025-11-13 21:34:45.2805 IST [Coverity Connect Scan] INFO: Coverity Capture completed successfully
-2025-11-13 21:34:45.2905 IST [Coverity Connect Scan] INFO: Provided value for resource 'coverity.completed'
-2025-11-13 21:34:45.2908 IST [Coverity Connect Scan] INFO: Provided value for resource 'coverity.idir.output'
-2025-11-13 21:34:45.2914 IST [Coverity Connect Scan] INFO: Adapter finished
-2025-11-13 21:34:45.3511 IST [SCM Checker] INFO: Adapter finished
-2025-11-13 21:34:46.6376 IST [Coverity Connect Post Scan] INFO: Provided value for resource 'coverity.connect.resultURL'
-2025-11-13 21:34:46.6411 IST [Coverity Connect Post Scan] INFO: Provided value for resource 'coverity.connect.policy.issueCount'
-2025-11-13 21:34:46.6417 IST [Coverity Connect Post Scan] INFO: Adapter finished
+2025-11-13 21:49:23.4312 IST [Bridge CLI] INFO: Using cache directory: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
+2025-11-13 21:49:23.4425 IST [Bridge CLI] INFO: Found version "3.0.128" in registry for workflow "connect", trying to load it from local cache
+2025-11-13 21:49:23.5330 IST [Bridge CLI] INFO: Input Resources:
+2025-11-13 21:49:23.5331 IST [Bridge CLI] INFO: resource = value [source]
+2025-11-13 21:49:23.5331 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-13 21:49:23.5331 IST [Bridge CLI] INFO: coverity.connect.project.name = pr-comments [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5332 IST [Bridge CLI] INFO: coverity.connect.stream.name = pr-comments-main [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5332 IST [Bridge CLI] INFO: coverity.connect.url = https://integrations-qa.dev.cnc.duckutil.net [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5332 IST [Bridge CLI] INFO: coverity.connect.user.name = admin [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5332 IST [Bridge CLI] INFO: coverity.connect.user.password = ***************************************** [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5332 IST [Bridge CLI] INFO: coverity.waitForScan = true [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5333 IST [Bridge CLI] INFO: network.airgap = false [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5333 IST [Bridge CLI] INFO: network.ssl.trustAll = false [coverity_input9049824890493443057.json]
+2025-11-13 21:49:23.5333 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-13 21:49:23.5333 IST [Bridge CLI] INFO: Starting adapters for stage connect
+2025-11-13 21:49:23.5337 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Controller
+2025-11-13 21:49:23.5387 IST [Bridge CLI] INFO: Starting Adapter: Check pull request
+2025-11-13 21:49:23.5617 IST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
+2025-11-13 21:49:23.5619 IST [Check pull request] INFO: Adapter finished
+2025-11-13 21:49:25.8553 IST [Coverity Connect Controller] INFO: No coverity version is configured, will use the default or latest supported version from the server
+2025-11-13 21:49:25.9063 IST [Coverity Connect Controller] INFO: Provided value for resource 'coverity.execution.path'
+2025-11-13 21:49:25.9064 IST [Bridge CLI] INFO: Starting adapters for stage connect-post-processing
+2025-11-13 21:49:25.9064 IST [Bridge CLI] INFO: Starting adapters for stage scm
+2025-11-13 21:49:25.9064 IST [Bridge CLI] INFO: Starting adapters for stage connect-scan
+2025-11-13 21:49:25.9068 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Scan
+2025-11-13 21:49:25.9068 IST [Bridge CLI] INFO: Starting Adapter: Coverity Connect Post Scan
+2025-11-13 21:49:25.9068 IST [Bridge CLI] INFO: Starting Adapter: SCM Checker
+2025-11-13 21:49:25.9070 IST [Coverity Connect Controller] INFO: Adapter finished
+2025-11-13 21:49:25.9116 IST [Bridge CLI] INFO: Starting Adapter: Default Adapter for Set Version for Coverity
+2025-11-13 21:49:25.9118 IST [Default Adapter for Set Version for Coverity] INFO: Provided value for resource 'coverity.version'
+2025-11-13 21:49:25.9118 IST [Default Adapter for Set Version for Coverity] INFO: Adapter finished
+2025-11-13 21:49:25.9840 IST [Coverity Connect Scan] INFO: Identified workflow: Coverity
+2025-11-13 21:49:25.9841 IST [Coverity Connect Scan] INFO: command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity scan --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir -o analyze.location=connect -o commit.connect.url=https://integrations-qa.dev.cnc.duckutil.net -o commit.connect.stream=pr-comments-main -o commit.connect.project=pr-comments
+2025-11-13 21:49:26.0512 IST [Coverity Connect Scan] INFO: coverity 2025.9.0 covcli-2025.9-push-12
+2025-11-13 21:49:26.0537 IST [Coverity Connect Scan] WARNING: No setting for 'commit.connect.on-new-cert' specified.
+2025-11-13 21:49:26.0537 IST [Coverity Connect Scan] WARNING: Using default value of 'distrust'.
+2025-11-13 21:49:26.0537 IST [Coverity Connect Scan] WARNING: This may result in a certificate validation error when uploading defects to Coverity Connect.
+2025-11-13 21:49:26.0537 IST [Coverity Connect Scan] WARNING: If you trust the Coverity Connect instance and certificate validation fails, set 'commit.connect.on-new-cert' to 'trust'.
+2025-11-13 21:49:26.0538 IST [Coverity Connect Scan] WARNING: If you are unfamiliar with what this means, please talk to your Coverity Connect administrator.
+2025-11-13 21:49:26.0559 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir reset-host-name
+2025-11-13 21:49:26.0756 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir check-compatible
+2025-11-13 21:49:26.0989 IST [Coverity Connect Scan] INFO: Detected that stdout is not connected to a terminal.  Defaulting ticker mode to 'none'.
+2025-11-13 21:49:26.0990 IST [Coverity Connect Scan] INFO: If this is not correct, explicitly set the ticker mode to the desired value using the '--ticker-mode' option.
+2025-11-13 21:49:27.8823 IST [Coverity Connect Scan] INFO: Cloud analysis is enabled.
+2025-11-13 21:49:31.0578 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-manage-cache check
+2025-11-13 21:49:31.8314 IST [Coverity Connect Scan] INFO: Caching is enabled.
+2025-11-13 21:49:33.1907 IST [Coverity Connect Scan] INFO: Telemetry is enabled
+2025-11-13 21:49:33.9130 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
+2025-11-13 21:49:33.9364 IST [Coverity Connect Scan] INFO: Executing action no-op: nothing to do for initialization
+2025-11-13 21:49:34.4311 IST [Coverity Connect Scan] INFO: Executing action no-op: skipping compiler configuration
+2025-11-13 21:49:34.9424 IST [Coverity Connect Scan] INFO: Executing action no-op: no compilers need to be unconfigured
+2025-11-13 21:49:35.4245 IST [Coverity Connect Scan] INFO: Executing action no-op: compiler configurations loaded
+2025-11-13 21:49:36.1621 IST [Coverity Connect Scan] INFO: Executing action Emit files using buildless capture: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-capture-files --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir -c /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/capture-file-list-1229743902 --record-with-source
+2025-11-13 21:49:36.2031 IST [Coverity Connect Scan] INFO: Buildless capture started.
+2025-11-13 21:49:36.2239 IST [Coverity Connect Scan] INFO: Emitting 84 Files.
+2025-11-13 21:49:36.4896 IST [Coverity Connect Scan] INFO: Buildless capture completed.
+2025-11-13 21:49:36.4924 IST [Coverity Connect Scan] INFO: Executing action No unwanted TUs to delete
+2025-11-13 21:49:36.4924 IST [Coverity Connect Scan] INFO: Executing action Action cleanup: Unwanted TUs action cleanup
+2025-11-13 21:49:36.4925 IST [Coverity Connect Scan] INFO: Executing action deleteResidualTUs /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir
+2025-11-13 21:49:36.4927 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
+2025-11-13 21:49:36.5111 IST [Coverity Connect Scan] INFO: Executing action Invalidate capture results
+2025-11-13 21:49:37.0652 IST [Coverity Connect Scan] INFO: Executing command: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir list-capture-diagnostics
+2025-11-13 21:49:37.1267 IST [Coverity Connect Scan] INFO: Capture summary:
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     SUCCEEDED: 84
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     INCOMPLETE: 0
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     FAILED: 0
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     IGNORED: 6
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     FILES CAPTURED: 84
+2025-11-13 21:49:37.1268 IST [Coverity Connect Scan] INFO:     LINES OF CODE: 32728
+2025-11-13 21:49:37.1322 IST [Coverity Connect Scan] INFO: Capture phase took 3.942s.
+2025-11-13 21:49:37.1322 IST [Coverity Connect Scan] INFO: Loading compiler config '/Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml'
+2025-11-13 21:49:37.1366 IST [Coverity Connect Scan] INFO: Loading compiler config '/Users/madhusud/Jenkins_Testing/Nodes/workspace/Github_Coverity_Pr_Comments_main/nodejs-npm/.bridge/coverity_connect_scan/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml'
+2025-11-13 21:49:37.1385 IST [Coverity Connect Scan] INFO: Analyzing project in the cloud using Coverity Analysis version 2025.9.0
+2025-11-13 21:49:37.4398 IST [Coverity Connect Scan] INFO: Creating archive containing data to be analyzed...
+2025-11-13 21:49:37.4831 IST [Coverity Connect Scan] INFO: Properties archive created.
+2025-11-13 21:49:37.4831 IST [Coverity Connect Scan] INFO: Uploading data for analysis...
+2025-11-13 21:49:38.1877 IST [Coverity Connect Scan] INFO: |0----------25-----------50----------75---------100|
+2025-11-13 21:49:43.9071 IST [Coverity Connect Scan] INFO: ****************************************************
+2025-11-13 21:49:43.9072 IST [Coverity Connect Scan] INFO: Scan created.
+2025-11-13 21:49:43.9074 IST [Coverity Connect Scan] INFO: The scan ID is 'da1208fc-ce20-4342-a2e7-85d968e84b7e'
+2025-11-13 21:49:43.9093 IST [Coverity Connect Scan] INFO: Waiting for scan to complete...
+2025-11-13 21:49:43.9094 IST [Coverity Connect Scan] INFO: |0----------25-----------50----------75---------100|
+2025-11-13 21:52:38.0699 IST [Coverity Connect Scan] INFO: ****************************************************
+2025-11-13 21:52:38.7603 IST [Coverity Connect Scan] INFO: Analysis summary after merging defects:
+2025-11-13 21:52:38.7604 IST [Coverity Connect Scan] INFO:     HIGH SEVERITY:    2 issue(s)
+2025-11-13 21:52:38.7604 IST [Coverity Connect Scan] INFO:     MEDIUM SEVERITY: 12 issue(s)
+2025-11-13 21:52:38.7604 IST [Coverity Connect Scan] INFO:     LOW SEVERITY:    25 issue(s)
+2025-11-13 21:52:38.7605 IST [Coverity Connect Scan] INFO:     AUDIT SEVERITY:   0 issue(s)
+2025-11-13 21:52:38.7605 IST [Coverity Connect Scan] INFO: Results are available at https://integrations-qa.dev.cnc.duckutil.net:443/query/defects.htm?stream=pr-comments-main&outstanding=true
+2025-11-13 21:52:38.7610 IST [Coverity Connect Scan] INFO: Analyze phase took 3m1.621s.
+2025-11-13 21:52:38.7627 IST [Coverity Connect Scan] WARNING: !! SOURCES FOR UNSUPPORTED LANGUAGES WERE DETECTED !!
+2025-11-13 21:52:38.7627 IST [Coverity Connect Scan] WARNING: 
+2025-11-13 21:52:38.7628 IST [Coverity Connect Scan] WARNING: Source files for the following languages were detected, but these languages are not supported on Mac OS ARM:
+2025-11-13 21:52:38.7628 IST [Coverity Connect Scan] WARNING:   * C#
+2025-11-13 21:52:38.7630 IST [Coverity Connect Scan] WARNING: In order to analyze these files, please analyze the project on an operating system and architecture where they are supported.
+2025-11-13 21:52:38.7630 IST [Coverity Connect Scan] INFO: Scan complete.
+2025-11-13 21:52:38.7662 IST [Coverity Connect Scan] INFO: Coverity Capture completed successfully
+2025-11-13 21:52:38.7732 IST [Coverity Connect Scan] INFO: Provided value for resource 'coverity.completed'
+2025-11-13 21:52:38.7734 IST [Coverity Connect Scan] INFO: Provided value for resource 'coverity.idir.output'
+2025-11-13 21:52:38.7758 IST [Coverity Connect Scan] INFO: Adapter finished
+2025-11-13 21:52:38.9319 IST [SCM Checker] INFO: Adapter finished
+2025-11-13 21:52:40.6019 IST [Coverity Connect Post Scan] INFO: Provided value for resource 'coverity.connect.resultURL'
+2025-11-13 21:52:40.6022 IST [Coverity Connect Post Scan] INFO: Provided value for resource 'coverity.connect.policy.issueCount'
+2025-11-13 21:52:40.6030 IST [Coverity Connect Post Scan] INFO: Adapter finished
 ******************************* END EXECUTION OF BRIDGE CLI *******************************
 [Security Scan] INFO: Retrieving the issue count from the scan results
 [Security Scan] INFO: Total issues found: 39
@@ -336,7 +269,7 @@ Configuration: [githubOrg:coverity-cnc-jenkins-samples, repoName:pr-comments, cr
 [Pipeline] echo
 Job Name: MBP_Github_Coverity_Pr_Comments/main
 [Pipeline] echo
-Build Number: 2
+Build Number: 3
 [Pipeline] echo
 GitHub Organization: coverity-cnc-jenkins-samples
 [Pipeline] withCredentials
